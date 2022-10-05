@@ -1,0 +1,77 @@
+.custom-input {
+    min-width: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #575757;
+    &__title {
+      font-family: 'Gilroy';
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 20px;
+      color:inherit;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+    &__input{
+      padding: 16px 0 16px 24px;
+      border: 2px solid transparent;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 900;
+      color:inherit;
+      border: none;
+      border-radius: 16px;
+      background-color: #f3f3f4;
+      @media screen and (max-width: 767px) {
+        font-size: 22px;
+       line-height: 20px;
+      }
+    }
+    &__input:focus {
+      border: 2px solid #f3f3f4;
+      background: transparent;
+      outline: none;
+    }
+    &__input_disabled {
+      opacity: 50%;
+    }
+    &__perc-sign {
+      position: absolute;
+      top: 52px;
+      right: 7px;
+      padding: 15px 17px;
+      border-radius: 16px;
+      background-color: #ebebec;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 900;
+      @media screen and (max-width: 767px) {
+        top: 32px;
+        line-height: 22px;
+        padding: 12px 12px;
+      }
+    }
+    &__perc-sign_disabled {
+      opacity: 50%;;
+    }
+    &__sign {
+      position: absolute;
+      top: 60px;
+      right: 24px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 900;
+      @media screen and (max-width: 767px) {
+        top: 48px;
+        font-size: 22px;
+       line-height: 20px;
+      }
+    }
+    &__sign_disabled {
+      opacity: 50%;
+    }
+  }

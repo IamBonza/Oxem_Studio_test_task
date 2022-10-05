@@ -1,0 +1,99 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media screen and (max-width: 1439px){
+      padding-top: 100px;
+      padding-bottom: 120px;
+      height: auto;
+    }
+    @media screen and (max-width: 1119px){
+      padding-top: 64px;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 156px;
+    }
+    @media screen and (max-width: 767px){
+      padding-top: 44px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 64px;
+      height: auto;
+
+    }
+
+  }
+
+  .home {
+    width:100%;
+      .form-header {
+        margin-bottom: 32px;
+        max-width: 750px;
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 48px;
+        text-align: left;
+        color: #111111;
+        @media screen and (max-width: 767px){
+          font-size: 32px;
+          line-height: 30px;
+          width: 50%;
+        }
+      };
+      .form {
+        width:100%;
+        .inputs-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 32px;
+          margin-bottom: 46px;
+          @media screen and (max-width: 1439px){
+            grid-template-columns: 1fr
+          }
+          @media screen and (max-width: 767px){
+          }
+          
+        }
+        .total-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 32px;
+          @media screen and (max-width: 1439px){
+            grid-template-columns: 1fr 1fr
+          }
+          @media screen and (max-width: 767px){
+            grid-template-columns: 1fr
+          }
+           .btn {
+            position: relative;
+            min-height: 78px;
+            display: block;
+            border: none;
+            font-family: 'Nekst';
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 900;
+            color: #ffffff;
+            background-color: #FF9514;
+            border-radius: 40px;
+            @media screen and (max-width: 767px) {
+              font-size: 22px;
+              line-height: 20px;
+          }
+        
+           }
+           .btn:hover{
+            background-color: #111111;
+           }
+           .btn:active {
+            background-color: #575757;
+           }
+        }
+
+      }
+  }
+
+  

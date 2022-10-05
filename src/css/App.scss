@@ -1,0 +1,44 @@
+#app {
+    font-family: 'Nekst', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+      outline: transparent;
+      // border: 2px solid transparent;
+    }
+    input[type="number"]:focus{
+      // border: 2px solid #f3f3f4;
+      // background: transparent
+    }
+    .custom-input .b-slider {
+      width: 90%;
+      margin: -3px auto;
+    }
+    .b-slider .b-slider-track {
+      height: 4px;
+    }
+  
+    .custom-input .b-slider .b-slider-thumb-wrapper .b-slider-thumb {
+      background: #FF9514;
+      border: none;
+    }
+  
+    .custom-input .b-slider.is-primary .b-slider-fill {
+        background: #FF9514 !important;
+      }
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
