@@ -8,7 +8,7 @@
       :max="max" 
       :value="inputValue"
       :disabled="isLoading"
-      @input="onInputChange(inputData.value)"
+      @input="onInputChange(inputValue)"
       />
     <span v-if="perc" :class="percSignClasses">{{value}}%</span> 
     <span v-else :class="inputSignClasses">{{inputData.value}}</span>
@@ -21,7 +21,7 @@
         :tooltip="false" 
         :value="value"
         :disabled="isLoading"
-        @dragging="onSliderChange"
+        @input="onSliderChange"
         ></b-slider>
     </b-field>
 
